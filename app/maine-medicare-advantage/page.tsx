@@ -1,0 +1,16 @@
+import type { Metadata } from 'next'
+import { STATES } from '@/lib/medicareData'
+import StateMedicareAdvantagePage from '@/components/StateMedicareAdvantagePage'
+
+const state = STATES['ME']
+
+export const metadata: Metadata = {
+  title: 'Maine Medicare Advantage Plans 2026 — Compare Options',
+  description: 'Compare Maine Medicare Advantage plans for 2026. Free calculator showing estimated premiums, coverage differences, and how Medicare Advantage compares to Original Medicare in Maine.',
+  alternates: { canonical: 'https://medicarecalculators.com/maine-medicare-advantage' },
+  robots: { index: true, follow: true },
+}
+
+export default function Page() {
+  return <StateMedicareAdvantagePage state={state} />
+}
