@@ -67,6 +67,26 @@ const howToSchema = {
 
 const trustSignals = ['🏥 2026 Updated', '🔒 Private', '⚡ Instant', '✓ Free']
 
+const STATE_LIST = [
+  { slug: 'alabama', name: 'Alabama' }, { slug: 'alaska', name: 'Alaska' }, { slug: 'arizona', name: 'Arizona' },
+  { slug: 'arkansas', name: 'Arkansas' }, { slug: 'california', name: 'California' }, { slug: 'colorado', name: 'Colorado' },
+  { slug: 'connecticut', name: 'Connecticut' }, { slug: 'delaware', name: 'Delaware' }, { slug: 'florida', name: 'Florida' },
+  { slug: 'georgia', name: 'Georgia' }, { slug: 'hawaii', name: 'Hawaii' }, { slug: 'idaho', name: 'Idaho' },
+  { slug: 'illinois', name: 'Illinois' }, { slug: 'indiana', name: 'Indiana' }, { slug: 'iowa', name: 'Iowa' },
+  { slug: 'kansas', name: 'Kansas' }, { slug: 'kentucky', name: 'Kentucky' }, { slug: 'louisiana', name: 'Louisiana' },
+  { slug: 'maine', name: 'Maine' }, { slug: 'maryland', name: 'Maryland' }, { slug: 'massachusetts', name: 'Massachusetts' },
+  { slug: 'michigan', name: 'Michigan' }, { slug: 'minnesota', name: 'Minnesota' }, { slug: 'mississippi', name: 'Mississippi' },
+  { slug: 'missouri', name: 'Missouri' }, { slug: 'montana', name: 'Montana' }, { slug: 'nebraska', name: 'Nebraska' },
+  { slug: 'nevada', name: 'Nevada' }, { slug: 'new-hampshire', name: 'New Hampshire' }, { slug: 'new-jersey', name: 'New Jersey' },
+  { slug: 'new-mexico', name: 'New Mexico' }, { slug: 'new-york', name: 'New York' }, { slug: 'north-carolina', name: 'North Carolina' },
+  { slug: 'north-dakota', name: 'North Dakota' }, { slug: 'ohio', name: 'Ohio' }, { slug: 'oklahoma', name: 'Oklahoma' },
+  { slug: 'oregon', name: 'Oregon' }, { slug: 'pennsylvania', name: 'Pennsylvania' }, { slug: 'rhode-island', name: 'Rhode Island' },
+  { slug: 'south-carolina', name: 'South Carolina' }, { slug: 'south-dakota', name: 'South Dakota' }, { slug: 'tennessee', name: 'Tennessee' },
+  { slug: 'texas', name: 'Texas' }, { slug: 'utah', name: 'Utah' }, { slug: 'vermont', name: 'Vermont' },
+  { slug: 'virginia', name: 'Virginia' }, { slug: 'washington', name: 'Washington' }, { slug: 'west-virginia', name: 'West Virginia' },
+  { slug: 'wisconsin', name: 'Wisconsin' }, { slug: 'wyoming', name: 'Wyoming' },
+]
+
 export default function SocialSecurityPage() {
   return (
     <>
@@ -166,8 +186,23 @@ export default function SocialSecurityPage() {
           <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 px-6 py-5 mb-10">
             <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Disclaimer</p>
             <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed">
-              Social Security benefit estimates are based on the benefit amount you enter and standard SSA formulas for 2026. Actual benefits depend on your complete earnings history. Visit my.ssa.gov for your personalized Social Security statement. Not affiliated with the Social Security Administration or Medicare.
+              Social Security benefit estimates are based on the benefit amount you enter and standard SSA formulas for 2026 for educational purposes only. Actual benefits depend on your complete earnings history. Visit my.ssa.gov for your personalized statement or contact 1-800-MEDICARE for Medicare enrollment coordination. Consult a licensed Medicare advisor for personalized guidance. Not affiliated with the Social Security Administration, Medicare, or the US government.
             </p>
+          </div>
+
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Social Security Calculator by State</h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+              While Social Security benefits are calculated the same nationwide, state income tax treatment of benefits and Medicare coordination varies. Select your state for local Social Security and Medicare guidance.
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {STATE_LIST.map(({ slug, name }) => (
+                <a key={slug} href={`/${slug}-social-security-calculator`}
+                  className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-[#0f4c75] hover:text-white hover:border-[#0f4c75] transition-colors">
+                  {name}
+                </a>
+              ))}
+            </div>
           </div>
 
           <div className="pb-6"><AdBanner slot="3333333333" /></div>

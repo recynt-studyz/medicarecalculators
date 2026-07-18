@@ -10,7 +10,7 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 export const metadata: Metadata = {
   title: 'Medicare Part B IRMAA Calculator 2026 — Income-Related Premium Surcharge',
   description:
-    'Calculate your 2026 Medicare Part B IRMAA surcharge based on your income. Free IRMAA calculator showing all income brackets and how life-changing events can reduce your surcharge.',
+    'Calculate your 2026 Medicare Part B IRMAA surcharge. Free calculator with all income brackets and how life-changing events reduce your premium surcharge.',
   alternates: { canonical: 'https://medicarecalculators.com/part-b-irmaa' },
   robots: { index: true, follow: true },
 }
@@ -169,7 +169,7 @@ export default function PartBIRMAAPage() {
           <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 px-6 py-5 mb-10">
             <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Medicare Disclaimer</p>
             <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed">
-              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Contact Medicare at 1-800-MEDICARE or medicare.gov for official information. Not affiliated with Medicare or the US government.
+              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Contact Medicare at 1-800-MEDICARE or medicare.gov for official information. Consult a licensed Medicare advisor for personalized IRMAA planning. Not affiliated with Medicare or the US government.
             </p>
           </div>
 

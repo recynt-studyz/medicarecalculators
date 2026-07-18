@@ -132,6 +132,46 @@ export default function StateMedigapPage({ state: s }: { state: StateData }) {
             </p>
           </div>
 
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Plan G vs Plan N in {s.name}</h2>
+            <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-100 dark:border-amber-900/40 rounded-2xl p-6">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
+                Susan is 65 and enrolling in Medicare in {s.name}. She sees her primary care doctor about 8 times per year and takes 2 maintenance prescriptions. She is comparing Plan G and Plan N.
+                {s.medigapCommunityRated ? ` As a ${s.name} resident, she benefits from community rating — her premium will not increase with age the way it would in most states.` : ''}
+              </p>
+              <div className="space-y-1 text-sm text-gray-700 dark:text-gray-300 mb-4 font-mono bg-white/60 dark:bg-black/20 rounded-xl px-4 py-3">
+                <div>Plan G annual premium: ~$175 × 12 = $2,100</div>
+                <div>Plan N annual premium: ~$135 × 12 = $1,620</div>
+                <div>Premium savings with Plan N: $480/year</div>
+                <div className="pt-1">Plan N office visit copays: 8 × $20 = $160/year</div>
+                <div>Net savings with Plan N: $480 − $160 = $320/year</div>
+                <div className="font-bold pt-1">Plan N saves ~$320/year if Susan stays healthy</div>
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                For a healthy 65-year-old in {s.name}, Plan N typically saves $250–$400/year over Plan G. However, if Susan develops a condition requiring frequent specialist visits, Plan N copays can narrow or eliminate this advantage. Plan G offers complete cost predictability after the $257 Part B deductible — ideal for those who prefer simplicity or expect heavier healthcare use.
+                {s.medigapCommunityRated ? ` In ${s.name}, both plans maintain community-rated premiums, making long-term cost comparison more straightforward than in attained-age rating states.` : ` Contact ${s.shipName} at ${s.shipPhone} for help comparing specific ${s.name} insurer quotes.`}
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Key Factors in Choosing a Medigap Plan in {s.name}</h2>
+            <ul className="space-y-5">
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">Open Enrollment Is Your Best Window</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Your 6-month Medigap Open Enrollment Period — starting the month you turn 65 with Part B — is your guaranteed-issue window in {s.name}. During this period insurers cannot deny coverage or charge higher premiums based on health status. {s.medigapCommunityRated ? `${s.name} provides additional guaranteed issue protections beyond the federal minimum, giving you more flexibility than most states.` : `After this window, ${s.name} insurers can use medical underwriting in most circumstances. Missing this window can permanently limit your Medigap options — apply at 65 regardless of current health.`}</p>
+              </li>
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">{s.medigapCommunityRated ? `Community Rating Advantage in ${s.name}` : `Premium Rate Trends in ${s.name}`}</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{s.medigapCommunityRated ? `${s.name} is one of seven states requiring community rating for Medigap, meaning your premium is the same whether you enroll at 65 or 85 (before insurer adjustments). This dramatically levels the playing field for older ${s.name} seniors. Premiums still vary between insurers, so get multiple quotes through ${s.shipName} (${s.shipPhone}).` : `Most ${s.name} Medigap insurers use attained-age rating — premiums increase each year as you age. A Plan G policy at $150/month at age 65 may cost $250–$350/month by age 75. When comparing plans, ask about historical rate increase percentages — some ${s.name} insurers are more aggressive than others.`}</p>
+              </li>
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">Medigap vs Medicare Advantage in {s.name}</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Medigap provides nationwide coverage with any Medicare-accepting provider and no prior authorization — ideal for frequent travelers, those with existing specialist relationships, or anyone who wants predictable costs. Medicare Advantage in {s.name} averages ${s.avgMAPremium}/month with potential extra benefits like dental and vision, but uses networks and may require referrals. Our comparison calculator above can help quantify which option fits your financial and healthcare situation in {s.name}.</p>
+              </li>
+            </ul>
+          </div>
+
           <div className="mb-6">
             <AffiliateCTA headline={`Get Medigap quotes in ${s.name} — free`} />
           </div>
@@ -143,7 +183,7 @@ export default function StateMedigapPage({ state: s }: { state: StateData }) {
           <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 px-6 py-5 mb-10">
             <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Medicare Disclaimer</p>
             <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed">
-              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Actual Medigap premiums vary by insurer. Contact Medicare at 1-800-MEDICARE or medicare.gov for official information. Not affiliated with Medicare or the US government.
+              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Actual Medigap premiums vary by insurer, age, and state. Contact Medicare at 1-800-MEDICARE or medicare.gov for official information. Consult a licensed Medicare advisor for personalized Medigap plan comparison. Not affiliated with Medicare or the US government.
             </p>
           </div>
 

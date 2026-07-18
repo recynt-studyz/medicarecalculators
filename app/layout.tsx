@@ -8,7 +8,7 @@ const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Medicare Calculators 2026 — Free Medicare Cost & Benefits Estimator',
   description:
-    'Free 2026 Medicare calculators for Part A, Part B IRMAA, Medicare Advantage vs Original, Part D drug costs, Medigap plans, Social Security, RMD and retirement income. All 50 states.',
+    'Free 2026 Medicare calculators: Part B IRMAA, Medicare Advantage, Part D, Medigap, Social Security, RMD and retirement income. Updated 2026 data. All 50 states.',
   keywords: [
     'medicare calculator 2026',
     'medicare cost calculator',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Medicare Calculators 2026 — Free Medicare Cost & Benefits Estimator',
     description:
-      'Free 2026 Medicare calculators for Part A, Part B IRMAA, Medicare Advantage vs Original, Part D drug costs, Medigap plans, Social Security, RMD and retirement income. All 50 states.',
+      'Free 2026 Medicare calculators: Part B IRMAA, Medicare Advantage, Part D, Medigap, Social Security, RMD and retirement income. Updated 2026 data. All 50 states.',
     url: 'https://medicarecalculators.com',
     siteName: 'medicarecalculators.com',
     type: 'website',

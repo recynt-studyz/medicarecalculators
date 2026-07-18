@@ -10,7 +10,7 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 export const metadata: Metadata = {
   title: 'Medicare Cost Calculator 2026 — Estimate Your Monthly Premiums',
   description:
-    'Calculate your total 2026 Medicare costs including Part A, Part B, IRMAA surcharges, Part D, and Medigap premiums. Free Medicare cost estimator with income-based adjustments.',
+    'Calculate your total 2026 Medicare costs: Part A, Part B, IRMAA surcharges, Part D, and Medigap premiums. Free estimator with income-based IRMAA adjustment.',
   alternates: { canonical: 'https://medicarecalculators.com' },
   robots: { index: true, follow: true },
 }

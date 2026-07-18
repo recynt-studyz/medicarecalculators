@@ -180,7 +180,7 @@ export default function StateMedicareAdvantagePage({ state: s }: { state: StateD
           <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 px-6 py-5 mb-10">
             <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Medicare Disclaimer</p>
             <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed">
-              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Contact Medicare at 1-800-MEDICARE or medicare.gov for official plan comparison. Not affiliated with Medicare or the US government.
+              These calculators provide estimates based on 2026 Medicare data for educational purposes only. Contact Medicare at 1-800-MEDICARE or medicare.gov for official plan comparison. Consult a licensed Medicare advisor for personalized guidance. Not affiliated with Medicare or the US government.
             </p>
           </div>
 

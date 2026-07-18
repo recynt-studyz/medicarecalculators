@@ -41,25 +41,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE}/${slug}-medicare-calculator`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${BASE}/${slug}-medicare-advantage`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${BASE}/${slug}-social-security-calculator`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${BASE}/${slug}-medigap-plans`,
       lastModified: now,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
   ])
 

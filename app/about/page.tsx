@@ -47,7 +47,7 @@ export default function AboutPage() {
           <div className="mb-10">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Our Mission</h2>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              MedicareCalculators.com provides free, easy-to-use calculators to help Americans understand their Medicare options and retirement income. We believe that access to clear, accurate, and up-to-date Medicare information should be available to everyone — not just those who can afford a financial advisor.
+              MedicareCalculators.com is operated by Recynt Studyz LLC and provides free, easy-to-use calculators to help Americans understand their Medicare options and retirement income. We believe that access to clear, accurate, and up-to-date Medicare information should be available to everyone — not just those who can afford a financial advisor.
             </p>
             <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
               All calculators on this site use current 2026 Medicare data including IRMAA brackets, Part D deductibles, Medigap premiums, and Social Security formulas. All calculations are performed locally in your browser — we never send your financial information to any server.

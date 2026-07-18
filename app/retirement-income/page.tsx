@@ -10,7 +10,7 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 export const metadata: Metadata = {
   title: 'Retirement Income Calculator 2026 — Will Your Money Last?',
   description:
-    'Calculate how long your retirement savings will last in 2026. Free retirement income calculator with Social Security, Medicare cost integration, and portfolio longevity projections.',
+    'Free 2026 retirement income calculator: Social Security, Medicare costs, and portfolio longevity projections under 3 return scenarios.',
   alternates: { canonical: 'https://medicarecalculators.com/retirement-income' },
   robots: { index: true, follow: true },
 }

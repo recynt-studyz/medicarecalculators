@@ -206,6 +206,7 @@ export default function StateMedicareCostPage({ state: s }: StateMedicareCostPag
               <a href="/rmd" className="text-xs px-3 py-1.5 rounded-full border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:bg-[#0f4c75] hover:text-white hover:border-[#0f4c75] transition-colors">RMD Calculator</a>
               <a href={`/${s.slug}-medicare-advantage`} className="text-xs px-3 py-1.5 rounded-full border border-[#0f4c75] text-[#0f4c75] dark:text-blue-300 hover:bg-[#0f4c75] hover:text-white transition-colors">{s.name} Medicare Advantage</a>
               <a href={`/${s.slug}-medigap-plans`} className="text-xs px-3 py-1.5 rounded-full border border-[#0f4c75] text-[#0f4c75] dark:text-blue-300 hover:bg-[#0f4c75] hover:text-white transition-colors">{s.name} Medigap Plans</a>
+              <a href={`/${s.slug}-social-security-calculator`} className="text-xs px-3 py-1.5 rounded-full border border-[#0f4c75] text-[#0f4c75] dark:text-blue-300 hover:bg-[#0f4c75] hover:text-white transition-colors">{s.name} Social Security</a>
             </div>
           </div>
 

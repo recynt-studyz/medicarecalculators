@@ -142,6 +142,24 @@ export default function StateSocialSecurityPage({ state: s }: { state: StateData
             </div>
           </div>
 
+          <div className="mb-10">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Key Factors in the Social Security Claiming Decision</h2>
+            <ul className="space-y-5">
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">Health and Life Expectancy</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Break-even analysis is central to the claiming decision. To come out ahead by waiting from 62 to FRA, you generally need to live past age 80. To benefit from delaying FRA to 70, you need to live past approximately 83. {s.name} residents should consider personal health, family history, and lifestyle when setting a life expectancy assumption. Those in excellent health with long-lived family members benefit most from delaying to 70 — those with serious health conditions often maximize total lifetime benefits by claiming earlier.</p>
+              </li>
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">Spousal Coordination</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">For married couples in {s.name}, coordinating Social Security claiming between spouses can significantly increase lifetime household income. The spouse with the higher benefit should generally delay as long as possible — their benefit becomes the survivor benefit the widowed spouse collects for the rest of their life. The lower earner can claim earlier to provide household income while the higher earner delays. This strategy can produce tens of thousands of dollars in additional lifetime benefits for the surviving spouse.</p>
+              </li>
+              <li>
+                <p className="font-semibold text-gray-900 dark:text-white mb-1">Medicare and Social Security Interaction</p>
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">Medicare begins at 65 regardless of when you claim Social Security. If you delay Social Security past 65, you must actively enroll in Medicare Part B — you will not be enrolled automatically. Your Medicare Part B premium ($185/month in 2026) is deducted directly from your Social Security check once enrolled in both. Large RMDs starting at 73 can push income above IRMAA thresholds and raise your Medicare premium. Contact {s.shipName} at {s.shipPhone} for free, unbiased Medicare and retirement coordination guidance in {s.name}.</p>
+              </li>
+            </ul>
+          </div>
+
           <div className="mb-6">
             <AffiliateCTA headline={`Coordinate Medicare with your ${s.name} Social Security strategy`} />
           </div>
@@ -153,7 +171,7 @@ export default function StateSocialSecurityPage({ state: s }: { state: StateData
           <div className="rounded-2xl bg-slate-50 dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800 px-6 py-5 mb-10">
             <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Medicare Disclaimer</p>
             <p className="text-sm text-slate-700 dark:text-slate-400 leading-relaxed">
-              These calculators provide estimates based on 2026 data for educational purposes only. Actual Social Security benefits depend on your complete earnings history. Visit ssa.gov for your personalized estimate. Not affiliated with Social Security Administration, Medicare, or the US government.
+              These calculators provide estimates based on 2026 data for educational purposes only. Actual Social Security benefits depend on your complete earnings history. Visit ssa.gov or contact 1-800-MEDICARE for official Medicare and Social Security information. Consult a licensed Medicare advisor for personalized guidance. Not affiliated with the Social Security Administration, Medicare, or the US government.
             </p>
           </div>
 

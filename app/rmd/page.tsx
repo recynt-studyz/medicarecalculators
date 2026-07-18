@@ -10,7 +10,7 @@ import AffiliateCTA from '@/components/AffiliateCTA'
 export const metadata: Metadata = {
   title: 'RMD Calculator 2026 — Required Minimum Distribution from IRA and 401k',
   description:
-    'Calculate your 2026 Required Minimum Distribution from Traditional IRA, 401k, and 403b accounts. Free RMD calculator with IRS life expectancy tables and future projections.',
+    'Calculate your 2026 Required Minimum Distribution from IRA, 401k, and 403b accounts. Free RMD calculator with IRS life expectancy tables and projection table.',
   alternates: { canonical: 'https://medicarecalculators.com/rmd' },
   robots: { index: true, follow: true },
 }
